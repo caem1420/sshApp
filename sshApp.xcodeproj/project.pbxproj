@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		408764042646142400AD81F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408764032646142400AD81F2 /* ContentView.swift */; };
 		408764062646142600AD81F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408764052646142600AD81F2 /* Assets.xcassets */; };
 		408764092646142600AD81F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408764082646142600AD81F2 /* Preview Assets.xcassets */; };
+		408A377A26481BDF00103603 /* ModalConnectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A377926481BDE00103603 /* ModalConnectionInfo.swift */; };
+		40A048C02646D477009BE401 /* ModalNewConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A048BF2646D477009BE401 /* ModalNewConnection.swift */; };
+		40A048C32646EFAC009BE401 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40A048C22646EFAC009BE401 /* GoogleService-Info.plist */; };
+		9C589184C9136F6A87FE1C0E /* Pods_sshApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F55C6AB63CC354B1897586 /* Pods_sshApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,12 @@
 		408764052646142600AD81F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		408764082646142600AD81F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4087640A2646142600AD81F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408A377926481BDE00103603 /* ModalConnectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalConnectionInfo.swift; sourceTree = "<group>"; };
+		40A048BF2646D477009BE401 /* ModalNewConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNewConnection.swift; sourceTree = "<group>"; };
+		40A048C22646EFAC009BE401 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C9D23F6DD96CDAF7960846A /* Pods-sshApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sshApp.debug.xcconfig"; path = "Target Support Files/Pods-sshApp/Pods-sshApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F55C6AB63CC354B1897586 /* Pods_sshApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sshApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6236E2D835E2725D922B68 /* Pods-sshApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sshApp.release.xcconfig"; path = "Target Support Files/Pods-sshApp/Pods-sshApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C589184C9136F6A87FE1C0E /* Pods_sshApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,8 @@
 			children = (
 				408764002646142400AD81F2 /* sshApp */,
 				408763FF2646142400AD81F2 /* Products */,
+				7A784B36AA0A0B7CDD4DD88D /* Pods */,
+				6F5480094C5A576B0C48E1E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,9 +67,12 @@
 			children = (
 				408764012646142400AD81F2 /* sshAppApp.swift */,
 				408764032646142400AD81F2 /* ContentView.swift */,
+				40A048BF2646D477009BE401 /* ModalNewConnection.swift */,
 				408764052646142600AD81F2 /* Assets.xcassets */,
 				4087640A2646142600AD81F2 /* Info.plist */,
+				40A048C22646EFAC009BE401 /* GoogleService-Info.plist */,
 				408764072646142600AD81F2 /* Preview Content */,
+				408A377926481BDE00103603 /* ModalConnectionInfo.swift */,
 			);
 			path = sshApp;
 			sourceTree = "<group>";
@@ -69,6 +85,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6F5480094C5A576B0C48E1E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4F55C6AB63CC354B1897586 /* Pods_sshApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A784B36AA0A0B7CDD4DD88D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D23F6DD96CDAF7960846A /* Pods-sshApp.debug.xcconfig */,
+				FB6236E2D835E2725D922B68 /* Pods-sshApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +109,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4087640D2646142600AD81F2 /* Build configuration list for PBXNativeTarget "sshApp" */;
 			buildPhases = (
+				5F2E73FE6F7FA393C5CCE119 /* [CP] Check Pods Manifest.lock */,
 				408763FA2646142400AD81F2 /* Sources */,
 				408763FB2646142400AD81F2 /* Frameworks */,
 				408763FC2646142400AD81F2 /* Resources */,
+				7435E2ADB37EE9A875DE4B2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = sshApp;
+			packageProductDependencies = (
+			);
 			productName = sshApp;
 			productReference = 408763FE2646142400AD81F2 /* sshApp.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +149,8 @@
 				Base,
 			);
 			mainGroup = 408763F52646142400AD81F2;
+			packageReferences = (
+			);
 			productRefGroup = 408763FF2646142400AD81F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,10 +167,53 @@
 			files = (
 				408764092646142600AD81F2 /* Preview Assets.xcassets in Resources */,
 				408764062646142600AD81F2 /* Assets.xcassets in Resources */,
+				40A048C32646EFAC009BE401 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F2E73FE6F7FA393C5CCE119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sshApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7435E2ADB37EE9A875DE4B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sshApp/Pods-sshApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sshApp/Pods-sshApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sshApp/Pods-sshApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		408763FA2646142400AD81F2 /* Sources */ = {
@@ -139,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				408764042646142400AD81F2 /* ContentView.swift in Sources */,
+				408A377A26481BDF00103603 /* ModalConnectionInfo.swift in Sources */,
+				40A048C02646D477009BE401 /* ModalNewConnection.swift in Sources */,
 				408764022646142400AD81F2 /* sshAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +348,7 @@
 		};
 		4087640E2646142600AD81F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9D23F6DD96CDAF7960846A /* Pods-sshApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +371,7 @@
 		};
 		4087640F2646142600AD81F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6236E2D835E2725D922B68 /* Pods-sshApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
